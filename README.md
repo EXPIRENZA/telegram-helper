@@ -1,7 +1,7 @@
-EXPIRENZA Sms Helper
+EXPIRENZA Telegram Helper
 =======
 
-Helper for sending sms trough EXPIRENZA SMS Gateway
+Helper for messaging through EXPIRENZA Telegram Bots API
 
 
 ## Installation
@@ -10,20 +10,25 @@ Helper for sending sms trough EXPIRENZA SMS Gateway
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/EXPIRENZA/sms-helper`
+- Clone this repo to your local machine using `https://github.com/EXPIRENZA/telegram-helper`
 
 ### Composer
 
 ```shell
-$ composer require expirenza/sms-helper "^1.0.0"
+$ composer require expirenza/telegram-helper "^1.0.0"
 ```
 
 ## How to use
 ```code
 <?php
 
-$helper = new SmsHelper('some api token');
-$helper->send('+10000000000', 'Text with max length is 350 characters');
+$helper = new TelegramHelper('OB9ymid4WQQNy-YNEJCHhXPgZRc2WhbA', true);
+
+$helper->addMessage('Broadcast Message 1');
+$helper->addMessage('Broadcast Message 2');
+$helper->addMessage('Broadcast Message 3');
+
+$helper->addMessage('Private Message Text', '+10000000000');
 
 ```
 
