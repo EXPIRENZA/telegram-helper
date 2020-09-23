@@ -14,7 +14,7 @@
       "homepage": "https://expirenza.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Expirenza\\src\\": "src/"
