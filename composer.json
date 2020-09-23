@@ -1,0 +1,23 @@
+{
+  "name": "expirenza/telegram-helper",
+  "description": "Helper for messaging through EXPIRENZA Telegram Bots API",
+  "type": "library",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Evgeniy Yurevich",
+      "email": "prosperodesu@live.com",
+      "homepage": "https://expirenza.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Expirenza\\src\\": "src/"
+    }
+  }
+}
